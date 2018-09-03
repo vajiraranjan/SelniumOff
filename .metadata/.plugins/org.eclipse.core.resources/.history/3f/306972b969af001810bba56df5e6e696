@@ -1,0 +1,20 @@
+package com.Sapient.ProjectName.helper.logger;
+
+import java.util.logging.Logger;
+
+public class LoggerHelper 
+{
+	private static boolean root=false;
+	
+	public static Logger getLogger(Class cls)
+	{
+		if(root)
+		{
+			return Logger.getLogger(cls);
+		}
+		PropertyConfigurator.configure("");
+		root= true;
+		
+	}
+
+}

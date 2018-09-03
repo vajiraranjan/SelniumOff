@@ -159,3 +159,9 @@ Contains: Missing org.apache.poi:poi-ooxml-schemas:jar:javadoc:3.16
 !MESSAGE Could not resolve artifact org.apache.poi:poi-ooxml-schemas:jar:javadoc:3.16
 !SUBENTRY 2 org.eclipse.m2e.core 4 -1 2018-09-03 10:48:50.810
 !MESSAGE Missing org.apache.poi:poi-ooxml-schemas:jar:javadoc:3.16
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-03 14:56:33.218
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-03 14:56:34.027
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
