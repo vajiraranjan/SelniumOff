@@ -5,6 +5,8 @@ package com.Sapient.ProjectName.helper.logger;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+import com.Sapient.ProjectName.helper.Resource.ResourceHelper;
+
 public class LoggerHelper 
 {
 	private static boolean root=false;
@@ -15,7 +17,9 @@ public class LoggerHelper
 		{
 			return Logger.getLogger(cls);
 		}
-		PropertyConfigurator.configure("C:\\NewSe\\UIFramework\\src\\main\\Resources\\ConfigFile\\log4j.properties");
+	//	PropertyConfigurator.configure("C:\\NewSe\\UIFramework\\src\\main\\Resources\\ConfigFile\\log4j.properties");
+		PropertyConfigurator.configure(ResourceHelper.getResourcePath("/src/main/Resources/ConfigFile/log4j.properties"));
+		
 		root= true;
 		return Logger.getLogger(cls);
 	}

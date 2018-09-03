@@ -1,0 +1,15 @@
+package com.Sapient.ProjectName.helper.Resource;
+
+public class ResourceHelper {
+	
+	public static String getResourcePath(String path)
+	{
+		String basePath= System.getProperty("user.dir");
+		return basePath + path;
+	}
+//	public static void main(String[] args) {
+//		String path = ResourceHelper.getResourcePath("/UIFramework/src/main/Resources/ConfigFile/log4j.properties");
+//		System.out.println(path);
+//		
+//	}
+}
